@@ -1,0 +1,23 @@
+{
+  "database": {
+    "rules": "Ecommeerce.html"
+  },
+  "firestore": {
+    "rules": "Ecommerce.css",
+    "indexes": "html"
+  },
+  "hosting": {
+    "public": "y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
